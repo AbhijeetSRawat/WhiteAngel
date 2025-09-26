@@ -58,20 +58,10 @@ const Footer = () => {
               Stay Connected with Opportunities
             </h3>
             <p className="text-blue-100 text-xl mb-8 max-w-2xl mx-auto">
-              Subscribe to our newsletter for the latest job openings, career tips, and industry insights.
+              Look our newsletter for the latest job openings, career tips, and industry insights.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                className="flex-1 px-6 py-4 rounded-full text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"
-              />
-              <button className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transform hover:scale-105 transition-all duration-300 shadow-lg flex items-center justify-center">
-                Subscribe
-                <ArrowUpRight className="ml-2 h-5 w-5" />
-              </button>
-            </div>
+            
           </div>
         </div>
 
@@ -202,18 +192,7 @@ const Footer = () => {
                   ))}
                 </ul>
 
-                <div className="mt-8 p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                  <h4 className="text-white font-bold mb-3">Ready to Get Started?</h4>
-                  <p className="text-blue-100 text-sm mb-4">
-                    Let us help you find the perfect match for your career or business needs.
-                  </p>
-                  <Link 
-                    to="/joinus"
-                    className="inline-block bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-50 transform hover:scale-105 transition-all duration-300 shadow-lg text-sm"
-                  >
-                    Get Started Today
-                  </Link>
-                </div>
+              
               </div>
 
               {/* Social & Additional Info */}

@@ -26,28 +26,28 @@ const Home = () => {
   ]
 
   const services = [
-    {
-      title: 'Executive Search',
-      description: 'Find top-tier executives and leadership talent for your organization',
-      icon: Users,
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      features: ['C-Level Positions', 'Strategic Hiring', 'Leadership Assessment']
-    },
-    {
-      title: 'Mass Recruitment',
-      description: 'Efficient bulk hiring solutions for large-scale workforce needs',
-      icon: Briefcase,
-      image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      features: ['Campus Recruitment', 'Volume Hiring', 'Quick Turnaround']
-    },
-    {
-      title: 'Specialized Hiring',
-      description: 'Industry-specific talent acquisition for niche roles',
-      icon: TrendingUp,
-      image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      features: ['Technical Roles', 'Domain Experts', 'Skill Matching']
-    }
-  ]
+  {
+    title: 'Executive Search',
+    description: 'Find top-tier executives and leadership talent for your organization',
+    icon: Users,
+    image: 'https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+    features: ['C-Level Positions', 'Strategic Hiring', 'Leadership Assessment']
+  },
+  {
+    title: 'Mass Recruitment',
+    description: 'Efficient bulk hiring solutions for large-scale workforce needs',
+    icon: Briefcase,
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+    features: ['Campus Recruitment', 'Volume Hiring', 'Quick Turnaround']
+  },
+  {
+    title: 'Specialized Hiring',
+    description: 'Industry-specific talent acquisition for niche roles',
+    icon: TrendingUp,
+    image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+    features: ['Technical Roles', 'Domain Experts', 'Skill Matching']
+  }
+]
 
   const testimonials = [
     {
@@ -112,17 +112,7 @@ const Home = () => {
             
             {/* Hero Content */}
             <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-              <div className="flex items-center space-x-3 mb-6">
-                <img 
-                  src={logo} 
-                  alt="White Angel Logo" 
-                  className="h-16 w-16 rounded-full object-cover ring-4 ring-white/30 animate-pulse"
-                />
-                <div>
-                  <h1 className="text-2xl lg:text-3xl font-bold">WHITE ANGEL</h1>
-                  <p className="text-white/80 text-sm font-medium">RECRUITMENT SERVICES</p>
-                </div>
-              </div>
+             
               
               <h2 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
                 Find Your

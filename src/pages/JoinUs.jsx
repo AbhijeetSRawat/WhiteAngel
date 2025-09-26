@@ -40,7 +40,7 @@ const JoinUs = () => {
         "Explore exciting opportunities across Real Estate, Textile, IT, Manufacturing, and FMCG sectors with our extensive network.",
       icon: Target,
       image:
-        "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
       benefits: [
         "Premium Job Matching",
         "Career Guidance",
@@ -55,7 +55,7 @@ const JoinUs = () => {
         "Our lightning-fast recruitment process gets you from application to offer in just 10 days with dedicated support.",
       icon: Zap,
       image:
-        "https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
       benefits: [
         "24-48 Hr Response",
         "Dedicated SPOC",
@@ -70,7 +70,7 @@ const JoinUs = () => {
         "Leverage our vast network of 20K+ LinkedIn connections and premium job portals for maximum exposure.",
       icon: Globe,
       image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
       benefits: [
         "Global Reach",
         "Premium Portals",
@@ -107,8 +107,8 @@ const JoinUs = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-20 lg:py-32">
+      {/* Hero Section - FIXED WITH PROPER NAVBAR SPACING */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-16 pt-24 lg:py-20 lg:pt-32">
         {/* Hero Background */}
         <div
           className="absolute inset-0 opacity-30"
@@ -260,11 +260,11 @@ const JoinUs = () => {
               })}
             </div>
 
-            {/* Active Opportunity Display */}
+            {/* Active Opportunity Display - FIXED IMAGE CONTAINER */}
             <div className="relative">
               <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden">
-                {/* Image */}
-                <div className="relative h-64">
+                {/* Image - FIXED CONTAINER */}
+                <div className="relative h-64 overflow-hidden">
                   <img
                     src={opportunities[activeCard].image}
                     alt={opportunities[activeCard].title}
@@ -372,14 +372,13 @@ const JoinUs = () => {
                 image:
                   "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
               },
-
               {
                 name: "Rajesh Kumar",
                 role: "Sales Manager",
                 company: "FMCG Leader",
                 salary: "15 LPA",
                 image:
-                  "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
+                  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
               },
               {
                 name: "Anita Singh",
@@ -387,7 +386,7 @@ const JoinUs = () => {
                 company: "MNC Giant",
                 salary: "18 LPA",
                 image:
-                  "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
+                  "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
               },
             ].map((story, index) => (
               <div
@@ -428,7 +427,7 @@ const JoinUs = () => {
         </div>
       </section>
 
-      {/* Process Flow with Images */}
+      {/* Process Flow with Images - FIXED VERSION */}
       <section className="py-20 bg-gradient-to-br from-blue-50 to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -441,15 +440,16 @@ const JoinUs = () => {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
-            {/* Step 1 */}
+            {/* Step 1 - FIXED */}
             <div className="text-center group">
-              <div className="relative mb-8">
+              <div className="relative mb-8 overflow-hidden rounded-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                   alt="Profile Delivery Process"
-                  className="w-full h-48 object-cover rounded-2xl shadow-lg group-hover:shadow-2xl transition-shadow duration-300"
+                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute top-4 left-4 bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute top-4 left-4 bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg shadow-lg">
                   1
                 </div>
               </div>
@@ -462,15 +462,16 @@ const JoinUs = () => {
               </p>
             </div>
 
-            {/* Step 2 */}
+            {/* Step 2 - FIXED */}
             <div className="text-center group">
-              <div className="relative mb-8">
+              <div className="relative mb-8 overflow-hidden rounded-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                  src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                   alt="Interview Process"
-                  className="w-full h-48 object-cover rounded-2xl shadow-lg group-hover:shadow-2xl transition-shadow duration-300"
+                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute top-4 left-4 bg-green-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute top-4 left-4 bg-green-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg shadow-lg">
                   2
                 </div>
               </div>
@@ -483,15 +484,16 @@ const JoinUs = () => {
               </p>
             </div>
 
-            {/* Step 3 */}
+            {/* Step 3 - FIXED */}
             <div className="text-center group">
-              <div className="relative mb-8">
+              <div className="relative mb-8 overflow-hidden rounded-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                   alt="Onboarding Support"
-                  className="w-full h-48 object-cover rounded-2xl shadow-lg group-hover:shadow-2xl transition-shadow duration-300"
+                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute top-4 left-4 bg-purple-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute top-4 left-4 bg-purple-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg shadow-lg">
                   3
                 </div>
               </div>

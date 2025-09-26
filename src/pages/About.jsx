@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
+import logo from '../assets/logo.jpeg'
 import { 
   Users, 
   Briefcase, 
@@ -52,53 +54,53 @@ const About = () => {
     { number: 24, suffix: '/7', label: 'Support Hours', key: 'support' }
   ]
 
-  // Your specific differentiators with working images
+  // Your specific differentiators with FIXED WORKING images
   const differentiators = [
     {
       icon: Trophy,
       title: '10+ Years Multi-Sector Expertise',
       description: 'Extensive exposure to multiple Non IT/IT sectors with proven experience in Talent Acquisition, Executive Search, Core TA Strategies, Pipeline management, Backup planning, Poaching, Headhunting, Bulk hires and Campus-Walk-in Drives.',
-      image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       highlights: ['Executive Search', 'Bulk Hiring', 'Campus Drives', 'Headhunting', 'Pipeline Management']
     },
     {
       icon: Database,
       title: 'Exceptional Database & Global Reach',
       description: 'Strong and exceptional database of candidates with access to premium job portals and robust social media presence across different platforms, including LinkedIn with 20K+ global connections.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       highlights: ['Premium Job Portals', '20K+ LinkedIn Connections', 'Global Database', 'Social Media Presence']
     },
     {
       icon: Headphones,
       title: '24×7 Recruitment Support',
       description: 'Round-the-clock recruitment support for clients based in India, ensuring continuous availability and immediate response to urgent hiring needs.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1553484771-371a605b060b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       highlights: ['24/7 Availability', 'India-focused', 'Immediate Response', 'Urgent Hiring Support']
     },
     {
       icon: UserCheck,
       title: 'Dedicated SPOC & Project Management',
       description: 'Dedicated Single Point of Contact (SPOC) and Project Manager to drive recruitment with immediate closure of critical hires, tracked through detailed recruitment trackers.',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       highlights: ['Dedicated SPOC', 'Project Management', 'Critical Hires', 'Detailed Tracking']
     },
     {
       icon: Clock,
       title: 'Lightning Fast 10-Day TAT',
       description: 'Industry-leading turnaround time of 10 days: 24-48 hours for profile delivery against JD, plus 3-7 days for all interview levels with offer closure, including backup planning.',
-      image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
       highlights: ['24-48 hrs Profile Delivery', '3-7 Days Interview Process', 'Offer Closure', 'Backup Planning']
     },
     {
       icon: MessageCircle,
       title: 'End-to-End Candidate Journey',
       description: 'Continuous follow-up with candidates for offer letter acceptance, resignation processing, and proactive engagement to ensure smooth onboarding ASAP.',
-      image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       highlights: ['Offer Follow-up', 'Resignation Support', 'Onboarding Assistance', 'Continuous Engagement']
     }
   ]
 
-  // Industry expertise with working images
+  // Industry expertise with FIXED working images
   const industries = [
     {
       icon: Home,
@@ -119,7 +121,7 @@ const About = () => {
       title: 'Electronics & IT',
       description: 'Comprehensive IT and electronics sector recruitment from technical roles to leadership positions.',
       color: 'bg-blue-500',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     },
     {
       icon: Factory,
@@ -133,28 +135,28 @@ const About = () => {
       title: 'FMCG Sector',
       description: 'Fast-moving consumer goods industry talent solutions for sales, marketing, and operations roles.',
       color: 'bg-red-500',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     }
   ]
 
-  // Process steps with working images
+  // Process steps with FIXED working images
   const processSteps = [
     {
       title: 'Profile Delivery',
       description: '24-48 hours to deliver qualified profiles against your JD requirements',
-      image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
       color: 'bg-blue-600'
     },
     {
       title: 'Interview Coordination',
       description: '3-7 days for all levels of interviews with dedicated project management',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
       color: 'bg-green-600'
     },
     {
       title: 'Onboarding Support',
       description: 'Continuous follow-up for offer acceptance, resignation, and smooth joining',
-      image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
       color: 'bg-purple-600'
     }
   ]
@@ -224,7 +226,7 @@ const About = () => {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
       
       {/* Hero Section with Background Image */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-20 lg:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-16 pt-24 lg:py-20 lg:pt-32">
         {/* Hero Background Image */}
         <div 
           className="absolute inset-0 opacity-20"
@@ -246,9 +248,11 @@ const About = () => {
           <div className="text-center">
             <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               <div className="flex justify-center mb-8">
-                <div className="h-24 w-24 bg-white rounded-full flex items-center justify-center ring-4 ring-white/30 animate-pulse">
-                  <Trophy className="h-12 w-12 text-blue-600" />
-                </div>
+                <img 
+                  src={logo} 
+                  alt="White Angel Logo" 
+                  className="h-24 w-24 rounded-full object-cover ring-4 ring-white/30 animate-pulse"
+                />
               </div>
               
               <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
@@ -316,19 +320,24 @@ const About = () => {
               })}
             </div>
 
-            {/* Active Differentiator Display */}
+            {/* Active Differentiator Display - FIXED VERSION */}
             <div className="relative">
               <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden">
-                {/* Image */}
-                <div className="relative h-64">
+                {/* Image Container - FIXED */}
+                <div className="relative h-64 overflow-hidden">
                   <img 
                     src={differentiators[activeDifferentiator].image}
                     alt={differentiators[activeDifferentiator].title}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <div className="absolute bottom-4 left-6">
-                    {React.createElement(differentiators[activeDifferentiator].icon, { className: "h-12 w-12 text-white" })}
+                    {React.createElement(differentiators[activeDifferentiator].icon, { 
+                      className: "h-12 w-12 text-white drop-shadow-lg" 
+                    })}
+                  </div>
+                  <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1">
+                    <span className="text-white text-sm font-semibold">Featured</span>
                   </div>
                 </div>
                 
@@ -344,7 +353,7 @@ const About = () => {
                   
                   <div className="space-y-3">
                     <h4 className="font-semibold text-gray-900">Key Highlights:</h4>
-                    <div className="grid grid-cols-2 gap-2">
+                    <div className="grid grid-cols-1 gap-2">
                       {differentiators[activeDifferentiator].highlights.map((highlight) => (
                         <div key={highlight} className="flex items-center space-x-2">
                           <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
@@ -386,7 +395,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Industry Expertise with Images */}
+      {/* Industry Expertise with Images - FIXED VERSION */}
       <section className="py-20 bg-gradient-to-br from-blue-50 to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -407,12 +416,12 @@ const About = () => {
                   className={`group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl border border-gray-100 transform transition-all duration-700 hover:-translate-y-2 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
                   style={{ transitionDelay: `${index * 200}ms` }}
                 >
-                  {/* Industry Image */}
-                  <div className="relative h-48">
+                  {/* Industry Image - FIXED CONTAINER */}
+                  <div className="relative h-48 overflow-hidden">
                     <img 
                       src={industry.image}
                       alt={`${industry.title} Industry`}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div className={`absolute bottom-4 left-4 p-3 rounded-xl text-white ${industry.color}`}>
@@ -437,7 +446,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Process Flow with Images */}
+      {/* Process Flow with Images - FIXED VERSION */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -452,18 +461,21 @@ const About = () => {
           <div className="grid lg:grid-cols-3 gap-8">
             {processSteps.map((step, index) => (
               <div key={step.title} className="text-center group">
-                <div className="relative mb-8">
+                <div className="relative mb-8 overflow-hidden rounded-2xl">
                   <img 
                     src={step.image}
                     alt={step.title}
-                    className="w-full h-48 object-cover rounded-2xl shadow-lg group-hover:shadow-2xl transition-shadow duration-300"
+                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className={`absolute top-4 left-4 ${step.color} text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg`}>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <div className={`absolute top-4 left-4 ${step.color} text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg shadow-lg`}>
                     {index + 1}
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">{step.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{step.description}</p>
+                <p className="text-gray-600 leading-relaxed">
+                  <strong>{step.description.split(' ')[0]}</strong> {step.description.split(' ').slice(1).join(' ')}
+                </p>
               </div>
             ))}
           </div>
@@ -496,13 +508,13 @@ const About = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/joinus"
+              <Link
+                to="/joinus"
                 className="group bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl inline-flex items-center justify-center"
               >
                 Start Your Search Today
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
               
               <a
                 href="mailto:w27072023@gmail.com"
