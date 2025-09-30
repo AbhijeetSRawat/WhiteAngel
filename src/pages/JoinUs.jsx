@@ -47,12 +47,16 @@ const JoinUs = () => {
   const googleFormUrl =
     "https://docs.google.com/forms/u/0/d/e/1FAIpQLScqK9epcFicmJOGyG-DORcpKCOFktmm8HzmH1mVkKTAXVjoww/formResponse";
 
+  // Add the employer form URL
+  const employerFormUrl = 
+    "https://docs.google.com/forms/d/e/1FAIpQLSdPH_34fwwzZZQ-m9Z27XIF_Las1LgKbtY5Qaw6Xb0hOsa50Q/viewform";
+
   const opportunities = [
     {
       title: "Find Your Dream Job",
       subtitle: "Multiple Industries",
       description:
-        "Explore exciting opportunities across Real Estate, Textile, IT, Manufacturing, and FMCG sectors with our extensive network.",
+        "Explore exciting opportunities across Textile, IT, Manufacturing, FMCG sectors and Real Estate with our extensive network.",
       icon: Target,
       image:
         "https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
@@ -80,9 +84,9 @@ const JoinUs = () => {
     },
     {
       title: "Global Network Access",
-      subtitle: "20K+ Connections",
+      subtitle: "30K+ Connections",
       description:
-        "Leverage our vast network of 20K+ LinkedIn connections and premium job portals for maximum exposure.",
+        "Leverage our vast network of 30K+ LinkedIn connections and premium job portals for maximum exposure.",
       icon: Globe,
       image:
         "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
@@ -317,7 +321,7 @@ const JoinUs = () => {
                   { icon: Users, label: '1000+ Placements', color: 'text-green-300' },
                   { icon: Building2, label: '200+ Companies', color: 'text-blue-300' },
                   { icon: Clock, label: '10-Day Process', color: 'text-yellow-300' },
-                  { icon: Globe, label: '20K+ Network', color: 'text-purple-300' }
+                  { icon: Globe, label: '30K+ Network', color: 'text-purple-300' }
                 ].map((item, index) => (
                   <div 
                     key={item.label}
@@ -664,7 +668,7 @@ const JoinUs = () => {
         </div>
       </section>
 
-      {/* Final CTA - Enhanced */}
+      {/* Final CTA - Enhanced with Employer Button */}
       <section className="relative py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-hidden">
         {/* Background Pattern */}
         <div
@@ -715,6 +719,7 @@ const JoinUs = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
+              {/* Job Seeker Button */}
               <a
                 href={googleFormUrl}
                 target="_blank"
@@ -726,13 +731,17 @@ const JoinUs = () => {
                 <Send className="ml-3 h-7 w-7 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </a>
               
-              <Link
-                to="/about"
-                className="group border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 inline-flex items-center justify-center"
+              {/* Employer Button - NEW */}
+              <a
+                href={employerFormUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group border-2 border-white text-white px-10 py-5 rounded-full font-bold text-xl hover:bg-white hover:text-blue-600 transition-all duration-300 inline-flex items-center justify-center transform hover:scale-105 shadow-lg hover:shadow-white/25"
               >
-                Learn More About Us
-                <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
+                <Building2 className="mr-3 h-7 w-7" />
+                Employer's Query
+                <ChevronRight className="ml-3 h-7 w-7 group-hover:translate-x-1 transition-transform" />
+              </a>
             </div>
 
             <div className="mt-8 flex items-center justify-center text-blue-200 animate-fade-in-up" style={{ animationDelay: '1.2s' }}>

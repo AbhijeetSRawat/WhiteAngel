@@ -53,13 +53,15 @@ const Home = () => {
       features: ['End-to-End Services', 'Technical Expertise', 'Wide Database', 'Pan India Network']
     },
     {
-      title: 'Executive Search & Headhunting',
-      subtitle: 'Board & CEO Level',
-      description: 'Specialized hiring for Board and CEO Level positions with deeper industry knowledge and broader networks when finding the most qualified candidate.',
-      icon: Target,
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      features: ['Board & CEO Hiring', 'Industry Knowledge', 'Broader Networks', 'Qualified Candidates']
-    },
+  title: 'Textile & Real Estate Recruitment',
+  subtitle: 'Industry-Specialized Solutions',
+  description: 'Comprehensive talent acquisition for textile manufacturing, garment production, real estate development, and property management sectors.',
+  icon: Building2,
+  image: 'https://images.unsplash.com/photo-1565514020179-026b92b84bb6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+  features: ['Textile Manufacturing Experts', 'Garment Industry Professionals', 'Real Estate Specialists', 'Property Management Teams']
+},
+
+   
     {
       title: 'Volume & Bulk Hiring',
       subtitle: 'Start-Ups & Expansion',
@@ -84,14 +86,14 @@ const Home = () => {
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
       features: ['Full Management', 'Flexible Processes', 'Scalable Solutions', 'HR Optimization']
     },
-    {
-      title: 'Payroll Management',
-      subtitle: 'Complete Compliance',
-      description: 'End-to-End Payroll Services with statutory compliance, audit services and registration under various labor laws.',
-      icon: DollarSign,
-      image: 'https://images.unsplash.com/photo-1553484771-371a605b060b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      features: ['Payroll Services', 'Statutory Compliance', 'Audit Services', 'Labor Law Registration']
-    }
+     {
+      title: 'Executive Search & Headhunting',
+      subtitle: 'Board & CEO Level',
+      description: 'Specialized hiring for Board and CEO Level positions with deeper industry knowledge and broader networks when finding the most qualified candidate.',
+      icon: Target,
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      features: ['Board & CEO Hiring', 'Industry Knowledge', 'Broader Networks', 'Qualified Candidates']
+    },
   ]
 
   const testimonials = [
